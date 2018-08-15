@@ -4,6 +4,7 @@ local-config.php
 debug.log
 
 public/wp/
+!public/wp/wp-content/
 public/content/uploads
 public/content/upgrade
 /vendor/
