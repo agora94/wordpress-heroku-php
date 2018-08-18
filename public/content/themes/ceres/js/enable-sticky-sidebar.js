@@ -1,0 +1,1 @@
+jQuery(document).ready(function($) {'use strict';	$('.space-right-sidebar-two')		.theiaStickySidebar({			additionalMarginTop: 100	});});
