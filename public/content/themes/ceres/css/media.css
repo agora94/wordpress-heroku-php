@@ -388,7 +388,7 @@ blockquote p {
 .space-title-wrap h1 {
 	font-size: 33px;
 	line-height: 37px;
-	border: 2px solid #ffc107;
+	/*border: 2px solid #ffc107;*/
 }
 .space-title-wrap h1 a {
 	font-size: 33px;
