@@ -3273,7 +3273,7 @@ ul.woocommerce-error::before {
 	width: 41px;
 	height: 41px;
 	border-radius: 0;
-	border: 2px solid #ffc107;
+	/*border: 2px solid #ffc107;*/
 	text-align: center;
 	font-size: 18px;
 	line-height: 41px;
