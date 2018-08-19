@@ -307,7 +307,6 @@ function ceres_scripts() {
 			}
 
 			blockquote,
-			.space-title-frame,
 			nav.pagination a,
 			nav.comments-pagination a,
 			nav.pagination-post a span.page-number,
