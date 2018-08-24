@@ -476,6 +476,7 @@ nav.comments-pagination a.next {
 .space-single-page-img-pic {
 	float: none;
 	width: 100%;
+	display: none;
 }
 .space-single-page-alt {
 	margin-top: 5px;

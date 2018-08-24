@@ -1293,6 +1293,7 @@ nav.comments-pagination span.current {
 }
 .space-single-page-img-pic {
 	width: 60%;
+	display: none;
 }
 .space-single-page-img-pic img {
 	border-radius: 3px;
