@@ -32,9 +32,9 @@
 
 						<!-- Single Page Image Start -->
 
-						<div class="space-single-page-img-2 relative">
+<!-- 						<div class="space-single-page-img-2 relative">
 							<img src="<?php echo esc_url($src[0]); ?>" alt="<?php the_title(); ?>">
-						</div>
+						</div> -->
 
 						<!-- Single Page Image End -->
 
