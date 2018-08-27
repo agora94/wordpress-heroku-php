@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "805e0706118e7863a60da4f729f0f808",
-    "content-hash": "d0ea9e65731b3e247bc71e3e6485e845",
+    "hash": "90f5f6b117a296cc6db4ac619bd7c243",
+    "content-hash": "6a053996109be6433990b96b592fcf7c",
     "packages": [
         {
             "name": "fancyguy/webroot-installer",
@@ -121,12 +121,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "6a2c921a0d691223a5b92b764ae986fda15b90d6"
+                "reference": "1cdd477661d3da7434efe5fedcb42d7b42503b8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/6a2c921a0d691223a5b92b764ae986fda15b90d6",
-                "reference": "6a2c921a0d691223a5b92b764ae986fda15b90d6",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1cdd477661d3da7434efe5fedcb42d7b42503b8d",
+                "reference": "1cdd477661d3da7434efe5fedcb42d7b42503b8d",
                 "shasum": ""
             },
             "bin": [
@@ -157,7 +157,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2018-08-08 00:56:54"
+            "time": "2018-08-17 16:27:37"
         }
     ],
     "aliases": [],
@@ -168,7 +168,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "ext-mbstring": "*"
     },
     "platform-dev": []
 }
