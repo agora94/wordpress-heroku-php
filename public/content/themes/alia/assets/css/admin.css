@@ -1,0 +1,48 @@
+.notice.alia-update {
+    padding: 36px 22px 30px;
+}
+.notice.alia-update h2 {
+	font-weight: bold;
+	margin-bottom: 6px;
+	color: #222;
+	font-size: 19px;
+}
+.notice.alia-update .about-description {
+    font-size: 15px;
+    line-height: 23px;
+    color: #4c4c4c;
+    margin: 0;
+}
+
+.notice.alia-update .welcome-panel-content {
+	margin-bottom: 16px;
+}
+
+.notice.alia-update .welcome-panel-column p {
+	font-size: 14px;
+	margin-top: 2px;
+	    margin-bottom: 2px;
+}
+
+.notice.alia-update .welcome-panel-column a {
+	margin-right: 6px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.notice.alia-update .rate_stars {
+	margin-top: 2px;
+}
+
+.notice.alia-update .rate_stars .dashicons {
+	color: #fdc42d;
+}
+
+.notice.alia-update .welcome-panel-column {
+	width: 50%;
+	padding: 12px 0;
+}
+
+.notice.alia-update .welcome-panel-column:first-child {
+	width: 50%;
+}
