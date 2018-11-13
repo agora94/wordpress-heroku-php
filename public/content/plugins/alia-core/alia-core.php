@@ -7,10 +7,10 @@ Author: Ahmad Works
 Author URI: http://ahmad.works/
 License: Themeforest Split Licence
 License URI: -
-Version: 1.10
+Version: 1.11
 */
 
-$social_networks = array("facebook-square" => "Facebook", "twitter" => "Twitter", "google-plus" =>  "Google Plus", "behance" => "Behance", "dribbble" => "Dribbble", "linkedin" => "Linked In", "youtube" => "Youtube", 'vimeo-square' => 'Vimeo', "vk" => "VK", "vine" => "Vine", "digg" => "Digg", "skype" => "Skype", "instagram" => "Instagram", "pinterest" => "Pinterest", "github" => "Github", "bitbucket" => "Bitbucket", "stack-overflow" => "Stack Overflow", "renren" => "Ren Ren", "flickr" => "Flickr", "soundcloud" => "Soundcloud", "steam" => "Steam", "qq" => "QQ", "slideshare" => "Slideshare", 'discord' => 'Discord');
+$social_networks = array("facebook-square" => "Facebook", "twitter" => "Twitter", "google-plus" =>  "Google Plus", "behance" => "Behance", "dribbble" => "Dribbble", "linkedin" => "Linked In", "youtube" => "Youtube", 'vimeo-square' => 'Vimeo', "vk" => "VK", "vine" => "Vine", "digg" => "Digg", "skype" => "Skype", "instagram" => "Instagram", "pinterest" => "Pinterest", "github" => "Github", "bitbucket" => "Bitbucket", "stack-overflow" => "Stack Overflow", "renren" => "Ren Ren", "flickr" => "Flickr", "soundcloud" => "Soundcloud", "steam" => "Steam", "qq" => "QQ", "slideshare" => "Slideshare", 'discord' => 'Discord', 'telegram' => 'Telegram', 'medium-m' => 'Medium');
 
 /* --------
 include widgets
@@ -47,7 +47,7 @@ register scripts
 ------------------------------------------- */
 if ( ! function_exists( 'alia_core_scripts' ) ) :
 function alia_core_scripts() {
-    wp_enqueue_script( 'alia-core-script', plugins_url( '/inc/alia-core.js', __FILE__ ) , array( 'alia-global-script' ), '1.10', true );
+    wp_enqueue_script( 'alia-core-script', plugins_url( '/inc/alia-core.js', __FILE__ ) , array( 'alia-global-script' ), '1.11', true );
 
     // define js vars
     $alia_core_variables_array = array(
@@ -549,6 +549,8 @@ if (!function_exists('alia_social_icons')):
 function alia_author_social_icons() {
     global $social_networks;
     
+    $social_networks['user_url'] = esc_attr__('Website', 'alia-core');
+
     $output = '';
     $activated = 0;
     foreach ($social_networks as $network => $social ) {
@@ -556,6 +558,10 @@ function alia_author_social_icons() {
             $activated++;
             if ($activated == 1) {
                 $output .= '<div class="social_icons_list author_social_icons_list">';
+            }
+
+            if ($network == 'user_url') {
+                $network = 'globe fas';
             }
 
             $output .= '<a rel="nofollow" target="_blank" href="'.get_the_author_meta($network).'" title="'.$social.'" class="social_icon author_social_icon social_' . $network . ' social_icon_' . $network . '"><i class="fab fa-' . $network . '"></i></a>';
